@@ -1,0 +1,72 @@
+
+body{
+    background-color: #f0f0f0;
+}
+
+.title{
+    display:flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.container{
+    display:flex;
+    margin:auto;
+    height: 600px;
+}
+.gridBox{
+    display:grid;
+    margin:auto;
+    width:500px;
+    height:500px;
+}
+
+.gridBox > div{
+    border: 1px solid black;
+}
+.inputBox{
+    text-align:center;
+}
+
+.copyright{
+    left: 0;
+    bottom:0;
+    width:100%;
+    text-align: center;
+    position:fixed;
+}
+
+#rainbow{
+    background: linear-gradient(to right, red , yellow, green, cyan, blue, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.buttons { 
+    visibility: hidden; 
+    text-align: center;
+    transform: scale(2);
+}
+
+.buttons > * { 
+    visibility: visible; 
+}
+
+.buttons > * { 
+    transition: opacity 150ms linear 150ms, transform 100ms ease-in-out 100ms; 
+}
+
+.buttons:hover > * { 
+    opacity: 0.3; transform: scale(0.9); 
+    cursor:pointer;
+}
+
+.buttons > *:hover { 
+    opacity: 1; 
+    transform: scale(1.1); 
+    transition-delay: 0ms, 0ms; 
+}
+
+
+
